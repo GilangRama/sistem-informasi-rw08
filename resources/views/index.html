@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            !(function () {
+                let e = document.createElement("script"),
+                    t =
+                        document.head ||
+                        document.getElementsByTagName("head")[0];
+                (e.src =
+                    "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+                    // Replace 1.x.x with the version that you want
+                    (e.async = !0),
+                    (e.onload = () => {
+                        window.WebChat.default(
+                            {
+                                initPayload: "/greet",
+                                customData: {
+                                    language: "in",
+                                },
+                                socketUrl: "http://34.101.115.216/",
+                                socketPath: "/socket.io/",
+                                title: "Chatbot RW 08",
+                                subtitle:
+                                    "Selamat Datang! Sapa aku untuk memulai obrolan!",
+                                // add other props here
+                            },
+                            null
+                        );
+                    }),
+                    t.insertBefore(e, t.firstChild);
+            })();
+        </script>
+    </body>
+</html>

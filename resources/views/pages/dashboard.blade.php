@@ -49,31 +49,35 @@
                 </div>
             </div>
         </div>
+        
     </div>
-    <script>
-        !(function() {
-            let e = document.createElement("script"),
-                t = document.head || document.getElementsByTagName("head")[0];
-            (e.src =
-                "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
-            // Replace 1.x.x with the version that you want
-            (e.async = !0),
-            (e.onload = () => {
-                window.WebChat.default({
-                        initPayload: '/greet',
-                        customData: {
-                            language: "in"
-                        },
-                        socketUrl: "http://34.101.68.223/",
-                        socketPath: "/socket.io/",
-                        title: 'Chatbot RW 08',
-                        subtitle: 'Selamat Datang! Sapa aku untuk memulai obrolan!'
-                        // add other props here
+    
+@endsection
+
+@section('aditionalScripts')    
+    <script>!(function() {
+        let e = document.createElement("script"),
+            t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+            "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+        // Replace 1.x.x with the version that you want
+        (e.async = !0),
+        (e.onload = () => {
+            window.WebChat.default({
+                    initPayload: '/greet',
+                    customData: {
+                        language: "in"
                     },
-                    null
-                );
-            }),
-            t.insertBefore(e, t.firstChild);
-        })();
-    </script>
-    @endsection
+                    socketUrl: "http://34.101.68.223/",
+                    socketPath: "/socket.io/",
+                    title: 'Chatbot RW 08',
+                    subtitle: 'Selamat Datang! Sapa aku untuk memulai obrolan!'
+                    // add other props here
+                },
+                null
+            );
+        }),
+        t.insertBefore(e, t.firstChild);
+    })();
+</script>
+@endsection

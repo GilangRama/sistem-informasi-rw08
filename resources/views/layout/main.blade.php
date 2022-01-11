@@ -65,9 +65,6 @@
                             <div class="d-sm-none d-lg-inline-block">Hi, {{ auth()->user()->username }}</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a href="#" class="dropdown-item has-icon">
-                                <i class="far fa-user"></i> Profile
-                            </a>
 
                             <div class="dropdown-divider"></div>
                             <form action="/logout" method="POST">
@@ -98,6 +95,9 @@
                                 <li><a class="nav-link" href="{{ route('pages.template-surat') }}">Template Surat</a></li>
                             </ul>
                         </li>
+                        <div class="mt-4 mb-4 ml-4 p-3 hide-sidebar-mini">
+                            <a target="_blank" class="btn btn-icon icon-left btn-primary" href="http://34.101.115.216/guest/conversations/production/3a3978d0f87f4a02934bf81a8479dc71"><i class="fas fa-rocket"></i>Mari Mengobrol</a>
+                        </div>
                     </ul>
                 </aside>
             </div>
