@@ -11,7 +11,7 @@ class TemplateSurat extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'nama_surat',
+        'nama_surat_template',
         'file_surat',
     ];
 }

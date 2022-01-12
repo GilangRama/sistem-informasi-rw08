@@ -4,7 +4,7 @@
     <div class="main-section">
             <div class="section">
                 <div class="section-header">
-                    <h3>Tambahkan Template Surat</h3>
+                    <h3>Ubah Template Surat</h3>
                 </div>
                 <div class="card">
                     <div class="card-header">
@@ -14,12 +14,12 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="col-12">
-                                    <form action="{{ route('template-surat.update-template') }}" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('template-surat.update-template-surat',$tem->id) }}" method="POST" enctype="multipart/form-data">
                                         @method('PUT')
                                         @csrf
                                         <div class="form-group">
-                                            <label for="nama_surat">Nama Surat</label>
-                                            <input name="nama_surat" type="text" class="form-control" id="nama_surat">
+                                            <label for="nama_surat_template">Nama Surat</label>
+                                            <input name="nama_surat_template" type="text" class="form-control" id="nama_surat_template">
                                         </div>
                                         <div class="form-group">
                                             <label>File Surat</label>

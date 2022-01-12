@@ -25,7 +25,7 @@ class TemplateSuratController extends Controller
      */
     public function create()
     {
-        return view('template-surat.create-template');
+        return view('template-surat.create-template-surat');
     }
 
     /**
@@ -37,7 +37,7 @@ class TemplateSuratController extends Controller
     public function store(Request $request)
     {
         TemplateSurat::create([
-            'name_surat' => $request -> nama_surat,
+            'name_surat_template' => $request -> nama_surat_template,
             'file_surat' => $request -> file -> getClientOriginalName(),
         ]);
 
@@ -65,7 +65,7 @@ class TemplateSuratController extends Controller
     public function edit($id)
     {
         $tem = TemplateSurat::findOrFail($id);
-        return view('template-surat.edit-template', compact('tem'));
+        return view('template-surat.edit-template-surat', compact('tem'));
     }
 
     /**
@@ -78,7 +78,7 @@ class TemplateSuratController extends Controller
     public function update(Request $request, $id)
     {
         TemplateSurat::find($id)->update([
-            'nama_surat' => $request -> nama_surat,
+            'nama_surat_template' => $request -> nama_surat_template,
             'file_surat' => $request -> file -> getClientOriginalName(),
         ]);
 

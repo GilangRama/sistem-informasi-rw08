@@ -49,8 +49,54 @@
                 </div>
             </div>
         </div>
-        
     </div>
+    <div class="section-body">
+        <div class="card-body">
+            <div class="tab-content tab-bordered" id="myTab3Content">
+                <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Keyword Untuk Chatbot</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>greet</h5>
+                            <h5>goodbye</h5>
+                            <h5>affirm</h5>
+                            <h5>deny</h5>
+                            <h5>thank</h5>
+                            <h5>ketua_rw</h5>
+                            <h5>rw08</h5>
+                            <h5>surat_step</h5>
+                            <h5>surat</h5>
+                            <h5>proker</h5>
+                            <h5>surat_kk</h5>
+                            <h5>surat_guna</h5>
+                            <h5>surat_kematian</h5>
+                            <h5>surat_dompersh</h5>
+                            <h5>surat_skm</h5>
+                            <h5>surat_waris</h5>
+                            <h5>surat_sktm</h5>
+                            <h5>surat_baik</h5>
+                            <h5>surat_nikah</h5>
+                            <h5>surat_layan</h5>
+                            <h5>surat_lahir</h5>
+                            <h5>surat_tinggal</h5>
+                            <h5>surat_pindah</h5>
+                            <h5>pengurus</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+            Sed sed metus vel lacus hendrerit tempus. Sed efficitur velit tortor, ac efficitur est lobortis quis. Nullam lacinia metus erat, sed fermentum justo rutrum ultrices. Proin quis iaculis tellus. Etiam ac vehicula eros, pharetra consectetur dui. Aliquam convallis neque eget tellus efficitur, eget maximus massa imperdiet. Morbi a mattis velit. Donec hendrerit venenatis justo, eget scelerisque tellus pharetra a.
+            </div>
+            <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+            Vestibulum imperdiet odio sed neque ultricies, ut dapibus mi maximus. Proin ligula massa, gravida in lacinia efficitur, hendrerit eget mauris. Pellentesque fermentum, sem interdum molestie finibus, nulla diam varius leo, nec varius lectus elit id dolor. Nam malesuada orci non ornare vulputate. Ut ut sollicitudin magna. Vestibulum eget ligula ut ipsum venenatis ultrices. Proin bibendum bibendum augue ut luctus.
+            </div>
+            </div>
+        </div>
+    </div>        
+</div>
     
 @endsection
 

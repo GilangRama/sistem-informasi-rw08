@@ -43,11 +43,11 @@ Route::delete('delete-kegiatan/{id}', [KegiatanController::class, 'destroy'])->n
 
 // Template Surat
 Route::get('template-surat', [TemplateSuratController::class, 'index'])->name('pages.template-surat');
-Route::get('create-template-surat', [TemplateSuratController::class, 'create'])->name('template-surat.create-template');
-Route::post('save-template-surat', [TemplateSuratController::class, 'store'])->name('template-surat.simpan-template');
-Route::get('edit-template-surat/{id}', [TemplateSuratController::class, 'edit'])->name('template-surat.edit-template');
-Route::put('update-template-surat/{id}', [TemplateSuratController::class, 'update'])->name('template-surat.update-template');
-Route::delete('delete-template-surat/{id}', [TemplateSuratController::class, 'destroy'])->name('template-surat.delete-template');
+Route::get('create-template-surat', [TemplateSuratController::class, 'create'])->name('template-surat.create-template-surat');
+Route::post('save-template-surat', [TemplateSuratController::class, 'store'])->name('template-surat.simpan-template-surat');
+Route::get('edit-template-surat/{id}', [TemplateSuratController::class, 'edit'])->name('template-surat.edit-template-surat');
+Route::put('update-template-surat/{id}', [TemplateSuratController::class, 'update'])->name('template-surat.update-template-surat');
+Route::delete('delete-template-surat/{id}', [TemplateSuratController::class, 'destroy'])->name('template-surat.delete-template-surat');
 
 // Surat
 Route::get('surat', [SuratMasukController::class, 'index'])->name('pages.surat');

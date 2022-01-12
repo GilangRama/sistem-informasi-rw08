@@ -15,7 +15,7 @@ class CreateTemplateSuratsTable extends Migration
     {
         Schema::create('template_surats', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_surat')->nullable();
+            $table->string('nama_surat_template')->nullable();
             $table->string('file_surat')->nullable();
             $table->timestamps();
             $table->softDeletes();

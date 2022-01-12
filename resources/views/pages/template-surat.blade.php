@@ -16,11 +16,11 @@
             @endif
         <div class="card">
             <div class="card-header">
-                <h4>Daftar Surat</h4>
+                <h4>Daftar Surat Template</h4>
             </div>
             <div class="col-12">
                 <div class="button">
-                    <a href="{{ route('template-surat.create-template') }}" class="btn btn-icon icon-left btn-primary"><i class="far fa-edit"></i> Tambah Data</a>
+                    <a href="{{ route('template-surat.create-template-surat') }}" class="btn btn-icon icon-left btn-primary"><i class="far fa-edit"></i> Tambah Data</a>
                 </div>
             </div>
             <div class="card-body">
@@ -35,12 +35,12 @@
                         @foreach ($dataTemplateSurat as $item)
                         <tr>
                             <td>{{ $item->id }}</td>
-                            <td>{{ $item->nama_surat }}</td>
+                            <td>{{ $item->nama_surat_template }}</td>
                             <td>{{ $item->file_surat }}</td>
                             <td>
-                                <a href="{{ url("edit-surat",$item->id) }}"  class="btn btn-sm btn-info"> Edit </a> 
+                                <a href="{{ url("edit-template-surat",$item->id) }}"  class="btn btn-sm btn-info"> Edit </a> 
                                 |
-                                <form action="{{ route('surat.delete-surat', $item->id) }}" method="POST">
+                                <form action="{{ route('template-surat.delete-template-surat', $item->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-sm btn-danger text-light delete-button"> Delete </button>
