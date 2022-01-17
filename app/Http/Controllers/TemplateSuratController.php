@@ -36,6 +36,9 @@ class TemplateSuratController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name_surat_template' => 'required',
+        ]);
         TemplateSurat::create([
             'name_surat_template' => $request -> nama_surat_template,
             'file_surat' => $request -> file -> getClientOriginalName(),
